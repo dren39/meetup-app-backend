@@ -11,6 +11,7 @@ class UsersController < ApplicationController
     token = request.headers["authorization"]
     id = JWT.decode(token, 'my_s3cr3t')[0]["user_id"]
     @user = User.find(id)
+    # byebug
     if @user.valid?
       render json: {user: {username: @user.username, fullname: @user.fullname, events: @user.events}}
     end
