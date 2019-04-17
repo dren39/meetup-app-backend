@@ -1,15 +1,44 @@
-user1 = User.create(username:'dren', password_digest: '12345', fullname: 'david ren')
+user1 = User.create(username:'dren', password_digest: '12345', fullname: 'David Ren')
+user2 = User.create(username:'ekos', password_digest: '12345', fullname: 'Elizabeth Kosowski')
+user3 = User.create(username:'bdix', password_digest: '12345', fullname: 'Brianna Dixon')
+user4 = User.create(username:'dsev', password_digest: '12345', fullname: 'Dana Sevcik')
+user5 = User.create(username:'dgur', password_digest: '12345', fullname: 'Dolma Gurung')
+user6 = User.create(username:'mmas', password_digest: '12345', fullname: 'Matt Masiello')
+user7 = User.create(username:'npar', password_digest: '12345', fullname: 'Nate Park')
 
-user2 = User.create(username:'ekos', password_digest: '123456', fullname: 'elizabeth kosowski')
 
-events1 = Event.create(name: 'flatiron talks', event_date: Date.new(2019, 4, 15), event_time: '9:00pm', address: '11 broadway, nyc, 10004', description: 'a tech talk hosted at the prestigious flatiron coding bootcamp for up and coming developers', available: 16, price: 0)
+events1 = Event.create(name: 'Operation Code NYC Google Analytics and Mastering Tech Job Search at The Muse', event_date: Date.new(2019, 4, 25), event_time: '6:15pm', address: '1375 Broadway New York, NY 10018
+', description: 'The Muse is the best place for the next gen workforce to research companies and careers. More than 75 million people each year trust The Muse to help them win at work, from professional advancement and skills-building to finding a job. Organizations use our platform to attract and hire talent by providing an authentic look at company culture, workplace, and values through the stories of their employees.', available: 16, price: 0)
+events2 = Event.create(name: 'Women Who Code NYC', event_date: Date.new(2019, 5, 20), event_time: '7:00pm', address: '45 Main Street, 3rd Floor
+Brooklyn, NY 11201', description: 'If you are curious about what it takes to build your own web app - this is the workshop for you. Learn the fundamentals of application development, and by the end, you will have a running web application that you have deployed yourself!', available: 20, price: 10)
+events3 = Event.create(name: 'How to Build Great Products in Any Industry by Spotify Sr PM', event_date: Date.new(2019, 5, 22), event_time: '7:30pm', address: 'Floor 2 1216, Broadway, New York, NY 10001', description: 'Lily Szajnberg is currently a Senior Product Manager at Spotify, building tools for artists. She is also the founder of the Cocktail Computer. Previously, Lily was Director of Product Management for live events at Viacom, MTV, CMT, Vh1, Logo, Spike, and Comedy Central and built a music platform and artists tools for the same brands. She is also the Founder and CEO of GAGE, a healthcare app that automates motion disorder tests such as Parkinson’s. GAGE won the national Health 2.0 Developer’s Challenge in 2011 and was featured at the American Society of Biomechanics Conference 2012, The Women’s Entrepreneurship Festival 2013, and StrataRX 2013. Lily has also built interactive exhibits for the American Museum of Natural History in New York City. Lily holds a Masters from the Interactive Telecommunications Program, NYU Tisch and a BA from Brown University. Lily spends her free time making craft cocktails, beatboxing with Treble, and running with her dog, Bosco. Lily is an oxford comma enthusiast.', available: 25, price: 5)
+events4 = Event.create(name: 'TechDay New York', event_date: Date.new(2019, 4, 30), event_time: '6:30pm', address: '655 W 34th St, New York, NY 10001', description: 'The TechDay New York team invites you to join us for our 8th annual event on May 2nd. Join thousands of investors, corporates, talent, press, and early adopters as attendees and discover over 300 of the most innovative startups in the city!', available: 35, price: 0)
+events5 = Event.create(name: 'Blockchain 101', event_date: Date.new(2019, 5, 10), event_time: '6:15pm', address: '42 Harmony Drive, Bronx, NY 10453', description: 'Get started with the most out of cutting-edge blockchain technology using the hands-on examples with experienced instructor. The two session course provides an overview of everything blockchain. We cover blockchain definition and details, distributed technology and emphasize blockchain development, with a great deal of code examples and practical exercises. Do not worry if you are a non-technical person, we explain the concepts of blockchain from scratch, with simple words and real world analogies which make the material easy to relate. And then we will walk you through comprehensive examples in Blockchain with an expert instructor to help you with stumbles along the way.', available: 45, price: 20)
+events6 = Event.create(name: 'Thursday Hacker Hours - meet on second floor', event_date: Date.new(2019, 4, 18), event_time: '1:00pm', address: '853 Main Street, Queens, NY 11365', description: 'Come meet up with others and work on your coding projects. Bring a laptop/tablet and get help and or give help.', available: 25, price: 0)
+events7 = Event.create(name: 'Python Programming 101', event_date: Date.new(2019, 6, 20), event_time: '6:00pm', address: '194 Rockaway Avenue, Brooklyn, NY 11233', description: 'During the course you will learn how to start writing small practical programs using Python. You will get familiar with Python’s fundamentals, How to work with the built-in data structures. You will get comfortable with Text editor, Terminal and learn how to use industry Python 3.7. Also, you will write and debug Python code with confidence by building your own modules. No coding experience needed, anyone who would like to learn how to program from scratch, who is thinking about a new career in the programming field or would like to boost a career with new skill, entrepreneurs who want to build web applications, and everyone who wants to know what practical programming is about.', available: 12, price: 99)
+events8 = Event.create(name: 'Machine learning: Trends, perspectives, and prospects at Attune', event_date: Date.new(2019, 4, 25), event_time: '7:30pm', address: '40 Exchange Pl, New York, NY 10005', description: 'Join us for an interactive panel discussion on machine learning (ML)! WWCode is excited to partner with Attune to host thought leaders from IBM, Two Sigma, Stash, and Koneksa Health. We’ll talk rends, perspectives, and prospects of ML and AI. Come share your thoughts and network with our panelists and the WWCode community. Light food and drinks will be served.', available: 35, price: 10)
+events9 = Event.create(name: 'Introduction to Decentralized Exchanges', event_date: Date.new(2019, 6, 10), event_time: '6:00pm', address: '12 Parkside Avenue, Brooklyn, NY 11203', description: 'During this meetup we will talk about Ethereum, smart contracts and how they are used to build decentralized exchanges. Wew will learn about what decentralized exchanges are and how they have the potential to revolutionize how securities are traded. Then we will take a look at Metro, a project that I have been working on during nights and weekends that attempts to provide a central location to validate and settle trades on the Ethereum network using these three protocols allowing the trading of tokens, debt instruments and options on the blockchain.', available: 30, price: 0)
+events10 = Event.create(name: 'Algorithms at Betterment', event_date: Date.new(2019, 5, 28), event_time: '1:00pm', address: '12 National Road, Brooklyn, NY 11207', description: 'This monthly meetup covers algorithms. We will split attendees into two main groups: Whiteboarding skills: You will solve algorithms in small groups, breaking off into your preferred programming language and working together to find a solution. Problems are provided and vary in difficulty; check out the Github for examples of past problems. For beginners: We have a dedicated group for beginners to learn about the basics of programming and algorithmic problem-solving. If you have some experience programming, we suggest you go ahead and try solving problems in the larger group, but all are welcome!', available: 25, price: 15)
 
-events2 = Event.create(name: 'girls who code', event_date: Date.new(2019, 5, 20), event_time: '7:00pm', address: '5 broadway, nyc, 10004', description: 'a tech talk featuring an all womens panel', available: 20, price: 10)
 
 appointment1 = Appointment.create(admin: true, user_id: user1.id, event_id: events1.id)
+appointment2 = Appointment.create(admin: true, user_id: user2.id, event_id: events2.id)
+appointment3 = Appointment.create(admin: true, user_id: user3.id, event_id: events3.id)
+appointment4 = Appointment.create(admin: true, user_id: user4.id, event_id: events4.id)
+appointment5 = Appointment.create(admin: true, user_id: user5.id, event_id: events5.id)
+appointment6 = Appointment.create(admin: true, user_id: user6.id, event_id: events6.id)
+appointment7 = Appointment.create(admin: true, user_id: user7.id, event_id: events7.id)
+appointment8 = Appointment.create(admin: true, user_id: user1.id, event_id: events8.id)
+appointment9 = Appointment.create(admin: true, user_id: user2.id, event_id: events9.id)
+appointment10 = Appointment.create(admin: true, user_id: user3.id, event_id: events10.id)
 
-appointment2 = Appointment.create(admin: false, user_id: user2.id, event_id: events1.id)
-
-appointment3 = Appointment.create(admin: false, user_id: user1.id, event_id: events2.id)
-
-appointment4 = Appointment.create(admin: true, user_id: user2.id, event_id: events2.id)
+appointment11 = Appointment.create(admin: false, user_id: user2.id, event_id: events1.id)
+appointment12 = Appointment.create(admin: false, user_id: user3.id, event_id: events2.id)
+appointment13 = Appointment.create(admin: false, user_id: user4.id, event_id: events3.id)
+appointment14 = Appointment.create(admin: false, user_id: user5.id, event_id: events4.id)
+appointment14 = Appointment.create(admin: false, user_id: user6.id, event_id: events5.id)
+appointment14 = Appointment.create(admin: false, user_id: user7.id, event_id: events6.id)
+appointment14 = Appointment.create(admin: false, user_id: user3.id, event_id: events7.id)
+appointment14 = Appointment.create(admin: false, user_id: user4.id, event_id: events8.id)
+appointment14 = Appointment.create(admin: false, user_id: user1.id, event_id: events9.id)
+appointment14 = Appointment.create(admin: false, user_id: user2.id, event_id: events10.id)
